@@ -372,6 +372,31 @@
         .ref-link:hover {
             background: rgba(212,175,55,0.3);
         }
+        /* Card de chamada para homenagem */
+        .call-card {
+            background: linear-gradient(135deg, rgba(212,175,55,0.15), rgba(30,20,45,0.8));
+            border-left: 4px solid #E4B83E;
+            text-align: center;
+        }
+        /* Seção de homenagem completa (estilo página separada) */
+        .tribute-full {
+            background: rgba(10, 8, 20, 0.95);
+            border-radius: 42px;
+            padding: 2rem;
+            margin: 3rem 0;
+            border: 1px solid rgba(212,175,55,0.4);
+            box-shadow: 0 20px 35px rgba(0,0,0,0.5);
+        }
+        .tribute-full h2 {
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1rem;
+            color: #F2C94C;
+        }
+        .tribute-full p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
             .section-title { font-size: 1.8rem; }
@@ -394,6 +419,7 @@
             <a href="#tese-grupo">Nossa tese</a>
             <a href="#midia">Mídia</a>
             <a href="#artigo-pdf">Artigo</a>
+            <a href="#homenagem-chamada">Homenagem</a>
         </div>
     </div>
 </header>
@@ -444,6 +470,16 @@
         </div>
     </section>
 
+    <!-- CARD DE CHAMADA PARA A HOMENAGEM -->
+    <section id="homenagem-chamada">
+        <div class="card call-card">
+            <i class="fas fa-heart" style="color: #E4B83E;"></i>
+            <h3>❤️ Direito Humano ao Esquecimento</h3>
+            <p>Uma história real de parceria, mágoa, superação e a força da bondade que não está nos autos judiciais.</p>
+            <a href="#homenagem-completa" class="btn-outline" style="background: #D4AF37; color:#05050A; border:none;">📖 Ler homenagem completa a Carolina</a>
+        </div>
+    </section>
+
     <!-- CASO AÍDA CURI -->
     <section id="caso-aida">
         <div class="section-title">💔 O Caso Aída Curi · 1958 – 2021</div>
@@ -478,32 +514,23 @@
                     <th>Direito ao esquecimento?</th>
                 </thead>
                 <tbody>
-                    <tr><td>Dias Toffoli (Relator)</td><td>Negou provimento</td><td>Inexistente</td>
-                    </tr>
-                    <tr><td>Alexandre de Moraes</td><td>Negou provimento</td><td>Inexistente (censura prévia)</td>
-                    </tr>
-                    <tr><td>Rosa Weber</td><td>Negou provimento</td><td>Inexistente — memória coletiva</td>
-                    </tr>
-                    <tr><td>Cármen Lúcia</td><td>Negou provimento</td><td>Inexistente — direito de lembrar</td>
-                    </tr>
-                    <tr><td>Luiz Fux</td><td>Negou (com ressalva)</td><td>Existente em tese, mas no caso interesse público prevaleceu</td>
-                    </tr>
-                    <tr><td>Gilmar Mendes</td><td>Provimento parcial</td><td>Existente (âmbito penal/ressocialização)</td>
-                    </tr>
-                    <tr><td>Nunes Marques</td><td>Provimento parcial</td><td>Existente (direitos da personalidade)</td>
-                    </tr>
-                    <tr><td>Edson Fachin</td><td>Provimento parcial</td><td>Existente como princípio, ponderado com liberdade de expressão</td>
-                    </tr>
+                    <tr><td>Dias Toffoli (Relator)</td><td>Negou provimento</td><td>Inexistente</tr>
+                    <tr><td>Alexandre de Moraes</td><td>Negou provimento</td><td>Inexistente (censura prévia)</td></tr>
+                    <tr><td>Rosa Weber</td><td>Negou provimento</td><td>Inexistente — memória coletiva</td></tr>
+                    <tr><td>Cármen Lúcia</td><td>Negou provimento</td><td>Inexistente — direito de lembrar</td></tr>
+                    <tr><td>Luiz Fux</td><td>Negou (com ressalva)</td><td>Existente em tese, mas no caso interesse público prevaleceu</td></tr>
+                    <tr><td>Gilmar Mendes</td><td>Provimento parcial</td><td>Existente (âmbito penal/ressocialização)</td></tr>
+                    <tr><td>Nunes Marques</td><td>Provimento parcial</td><td>Existente (direitos da personalidade)</td></tr>
+                    <tr><td>Edson Fachin</td><td>Provimento parcial</td><td>Existente como princípio, ponderado com liberdade de expressão</td></tr>
                 </tbody>
             </table>
         </div>
     </section>
 
-    <!-- OUTROS CASOS ILUSTRATIVOS - com fontes validadas e reflexão sobre OAB/Suzane -->
+    <!-- OUTROS CASOS ILUSTRATIVOS -->
     <section id="outros-casos">
         <div class="section-title">📌 Outros casos que desafiam o esquecimento</div>
         <div class="card-grid">
-            <!-- Barbosa -->
             <div class="card">
                 <i class="fas fa-futbol"></i>
                 <h3>Moacir Barbosa · O Maracanazo (1950)</h3>
@@ -511,7 +538,6 @@
                 <a href="https://super.abril.com.br/saude/barbosa-nunca-mais-jogou-pela-selecao-depois-do-maracanaco/" target="_blank" class="ref-link"><i class="fas fa-newspaper"></i> Super · A tragédia de Barbosa</a>
                 <a href="https://brasil.elpais.com/brasil/2014/06/11/deportes/1402498066_930352.html" target="_blank" class="ref-link"><i class="fas fa-newspaper"></i> El País · O fantasma do Maracanazo</a>
             </div>
-            <!-- Xuxa com nome do filme -->
             <div class="card">
                 <i class="fas fa-star-of-life"></i>
                 <h3>Xuxa · adultização na mídia</h3>
@@ -519,7 +545,6 @@
                 <a href="https://oglobo.globo.com/cultura/stf-mantem-decisao-que-permite-ao-google-exibir-cenas-de-nudez-de-xuxa-17499668" target="_blank" class="ref-link"><i class="fas fa-link"></i> O Globo · STF e cenas de nudez de Xuxa</a>
                 <a href="https://internetlab.org.br/pt/noticias/4especial-os-tribunais-brasileiros-e-o-esquecimento/" target="_blank" class="ref-link"><i class="fas fa-balance-scale"></i> InternetLab · Tribunais e esquecimento</a>
             </div>
-            <!-- Aranha -->
             <div class="card">
                 <i class="fas fa-user-shield"></i>
                 <h3>Goleiro Aranha & racismo</h3>
@@ -527,21 +552,18 @@
                 <a href="https://www.migalhas.com.br/depeso/340982/direito-ao-esquecimento-e-a-decisao-do-stf-no-re-1-010-606-rj" target="_blank" class="ref-link"><i class="fas fa-gavel"></i> Migalhas · Direito ao esquecimento e STF</a>
                 <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2014-09/stjd-exclui-gremio-da-copa-do-brasil-por-racismo" target="_blank" class="ref-link"><i class="fas fa-newspaper"></i> Agência Brasil · STJD e racismo</a>
             </div>
-            <!-- Suzane von Richthofen - com análise crítica e dados sobre a OAB -->
             <div class="card">
                 <i class="fas fa-user-secret"></i>
                 <h3>Suzane von Richthofen</h3>
-                <p>Condenada pelo assassinato dos pais, Suzane buscou impedir reexibição do caso para viabilizar ressocialização. STF reconheceu sigilo de antecedentes criminais, mas a tese do RE 1.010.606 dificulta o esquecimento penal.<br>
-                <strong>Trajetória acadêmica:</strong> Iniciou Direito na PUC-SP em 2002, interrompido pela prisão. Desde 2024, cursa Direito na Universidade São Francisco (USF), em Bragança Paulista. <br>
-                <span class="highlight">⚖️ Direito ao esquecimento é para todos?</span> O Estatuto da Advocacia (Lei 8.906/94), art. 8º, VI, exige "idoneidade moral" para inscrição na OAB. A pergunta que fica: uma condenação por homicídio duplamente qualificado impediria Suzane de exercer a advocacia? O princípio da ressocialização colide com a exigência de reputação ilibada. Para o STF, o direito ao esquecimento não existe como direito autônomo, mas a reabilitação social ainda é um valor constitucional. O caso expõe a dura realidade: o passado criminal pode significar, na prática, uma pena perpétua profissional.</p>
+                <p>Condenada pelo assassinato dos pais, Suzane buscou impedir reexibição do caso para viabilizar ressocialização. STF reconheceu sigilo de antecedentes criminais, mas a tese do RE 1.010.606 dificulta o esquecimento penal.<br><strong>Trajetória acadêmica:</strong> Iniciou Direito na PUC-SP em 2002, interrompido pela prisão. Desde 2024, cursa Direito na USF.<br>
+                <span class="highlight">⚖️ Direito ao esquecimento é para todos?</span> O Estatuto da Advocacia (Lei 8.906/94), art. 8º, VI, exige "idoneidade moral". A pergunta que fica: uma condenação por homicídio impediria Suzane de advogar? O caso expõe a pena perpétua profissional.</p>
                 <a href="https://revistaft.com.br/suzane-von-richtoffen-tem-direito-ao-esquecimento-ou-merece-ser-condenada-para-sempre-uma-abordagem-juridica-sobre-a-atuacao-da-midia-sobre-crimes-de-grande-repercussao-e-o-direito-ao-esqu/" target="_blank" class="ref-link"><i class="fas fa-book"></i> Revista FT · Direito ao esquecimento de Suzane</a>
-                <a href="https://noticias.stf.jus.br/postsnoticias/fux-extingue-processo-em-que-suzane-richthofen-buscava-suspender-publicacao-de-biografia/" target="_blank" class="ref-link"><i class="fas fa-gavel"></i> STF · Extinção do processo de Suzane</a>
+                <a href="https://noticias.stf.jus.br/postsnoticias/fux-extingue-processo-em-que-suzane-richthofen-buscava-suspender-publicacao-de-biografia/" target="_blank" class="ref-link"><i class="fas fa-gavel"></i> STF · Extinção do processo</a>
             </div>
-            <!-- Carolina Dieckmann -->
             <div class="card">
                 <i class="fas fa-laptop-code"></i>
                 <h3>Carolina Dieckmann · vazamento íntimo</h3>
-                <p>Fotos da atriz foram roubadas e espalhadas na internet. Caso impulsionou a Lei Carolina Dieckmann (12.737/2012) e o debate sobre desindexação em mecanismos de busca — dimensão digital do esquecimento.</p>
+                <p>Fotos da atriz foram roubadas e espalhadas na internet. Caso impulsionou a Lei Carolina Dieckmann (12.737/2012) e o debate sobre desindexação em mecanismos de busca.</p>
                 <a href="https://oglobo.globo.com/cultura/noticia/2025/04/22/carolina-dieckmann-fala-da-lei-que-leva-seu-nome-da-fama-de-antipatica-e-do-vazamento-de-fotos-intimas-me-botaram-num-jatinho-e-jogaram-meio-frontal-na-minha-boca.ghtml" target="_blank" class="ref-link"><i class="fas fa-newspaper"></i> O Globo · Depoimento de Carolina Dieckmann</a>
             </div>
         </div>
@@ -578,17 +600,13 @@
         </div>
         <div class="table-wrapper">
             <h3>📌 Proposta de ponderação (nossa tese)</h3>
-            <tr>
+            <table>
                 <thead><th>Situação concreta</th><th>Ponderação</th><th>Resultado</th></thead>
                 <tbody>
-                    <tr><td>Caso Aída Curi (fato histórico, feminicídio emblemático)</td><td>Interesse público prevalece</td><td>Direito ao esquecimento NEGADO</td>
-                    </tr>
-                    <tr><td>Cidadão absolvido de crime menor, sem repercussão atual</td><td>Direito ao esquecimento prevalece</td><td>RECONHECIDO</td>
-                    </tr>
-                    <tr><td>Vazamento de imagens íntimas (Carolina Dieckmann)</td><td>Ausência de interesse público; grave violação da intimidade</td><td>Desindexação garantida e direito APLICADO</td>
-                    </tr>
-                    <tr><td>Crime hediondo de conhecimento público (Suzane v. Richthofen)</td><td>Memória coletiva relevante, mas proteção contra exposição vexatória</td><td>NEGADO com ressalvas</td>
-                    </tr>
+                    <tr><td>Caso Aída Curi (fato histórico, feminicídio emblemático)</td><td>Interesse público prevalece</td><td>Direito ao esquecimento NEGADO</td></tr>
+                    <tr><td>Cidadão absolvido de crime menor, sem repercussão atual</td><td>Direito ao esquecimento prevalece</td><td>RECONHECIDO</td></tr>
+                    <tr><td>Vazamento de imagens íntimas (Carolina Dieckmann)</td><td>Ausência de interesse público; grave violação</td><td>Desindexação garantida e direito APLICADO</td></tr>
+                    <tr><td>Crime hediondo de conhecimento público (Suzane v. Richthofen)</td><td>Memória coletiva relevante, mas proteção contra exposição vexatória</td><td>NEGADO com ressalvas</td></tr>
                 </tbody>
             </table>
         </div>
@@ -628,16 +646,45 @@
         </div>
     </section>
 
-    <!-- NOVA SEÇÃO: Guia de Apresentações Notáveis (CAED UNISINOS) -->
+    <!-- GUIA DE APRESENTAÇÕES CAED -->
     <section id="guia-apresentacoes">
         <div class="section-title">📘 Material de apoio · Apresentações Notáveis</div>
         <div class="card" style="background: rgba(15, 18, 30, 0.8);">
             <i class="fas fa-lightbulb" style="font-size: 2rem;"></i>
             <h3>Guia Completo: Como Criar Apresentações de Slides Notáveis</h3>
-            <p>Do planejamento à execução: ferramentas, design, uso de IA e cuidados com o ambiente de exibição. Um recurso indispensável para quem deseja elevar o nível de suas apresentações acadêmicas e profissionais.</p>
+            <p>Do planejamento à execução: ferramentas, design, uso de IA e cuidados com o ambiente de exibição. Um recurso indispensável.</p>
             <a href="https://caedunisinos.com.br/noticias/noticia-guia-apresentacoes.html" target="_blank" class="btn-outline" style="margin-top: 0.5rem;"><i class="fas fa-external-link-alt"></i> Acessar o Guia CAED/UNISINOS</a>
         </div>
     </section>
+
+    <!-- SEÇÃO DE HOMENAGEM COMPLETA (PÁGINA SEPARADA VISUALMENTE) -->
+    <div id="homenagem-completa" class="tribute-full">
+        <i class="fas fa-heart" style="font-size: 2.5rem; color: #E4B83E; margin-bottom: 1rem; display: inline-block;"></i>
+        <h2>❤️ Direito Humano ao Esquecimento</h2>
+        <p style="font-size: 1.2rem; font-style: italic;">Uma homenagem a Carolina Thais Willmann – pelo esquecimento que não está nos autos, mas mora no coração.</p>
+        
+        <p>Nem todo esquecimento é jurídico. Há aquele que só a bondade humana pode conceder: o direito de não lembrar de uma mágoa, de um abandono involuntário, de um silêncio que magoa.</p>
+        
+        <p><strong>1º fato – O abandono injusto:</strong> No primeiro semestre, eu, Fábio, fazia parte de um grande grupo com Carolina. Percebi que a maioria era de preguiçosos. Eu já tinha o trabalho pronto, então saí do grupo, deixei aquele material e fiz outro sozinho. Carol ficou magoada. Ela não era preguiçosa – interagia, participava. Mas eu fui injusto. Aquilo partiu meu coração, mas não soube reparar na época.</p>
+        
+        <p><strong>2º fato – O convite que me salvou:</strong> Em outra disciplina, Carolina me convidou para seu grupo com outra colega. Ali foi diferente: todos participavam, reuníamos online e antes das aulas. A apresentação foi nota máxima, inesquecível. Graças a Carol ter <strong>esquecido</strong> que eu a havia abandonado antes. Ela me deu uma segunda chance.</p>
+        
+        <p><strong>3º fato – A vez dos excluídos:</strong> Tínhamos outro trabalho grupo praticamente fechado com Carol, mas eu encontrei no intervalo um colega, novo, inseguro que chorava – iria rodar, tinha nota baixa e ninguém queria fazer trabalho com ele. Mesmo que fizesse, precisaria de mais de 9,0. Eu disse: “Considere-se passado. Eu faço o trabalho, você apresenta comigo”. Ele duvidou. Eu respondi: “Confia, tchê. Sou criado em vila,nunca perdi uma briga, vou perder essa?” (ele sabia a que me referia pois também era criado em vila) Apresentamos, incluímos outra menina excluída, tiramos nota máxima. Ele passou. Magoei Carol mais uma vez, pois quebrei o trio sem avisar. Carol e as colegas fizeram um trabalho brilhante, mas não melhor que o meu time dos excluídos (kkkkk).</p>
+        
+        <p><strong>Dias atuais – Teoria do Direito:</strong> Agora, na disciplina do Professor Leonel, sentamos lado a lado. O professor exibiu julgados do STF e pediu formação de grupos. Eu, que desde criança luto pela inclusão (na 5ª série montei um time de futebol com deficientes físicos, mentais, excluídos – e vencemos o campeonato), olhei em volta e senti o que tantos sentem: o frio de quem é visto como “velho”, “feio” ou diferente. Grupos de 4, 6 pessoas se formavam rapidamente. Carolina seria facilmente incluída em qualquer grupo pela sua competência, beleza, dicção, opinião própria. Mas ela estava ao meu lado. Ela me deu o direito mais humano que existe: o direito ao esquecimento das mágoas, o direito de recomeçar.</p>
+        
+        <p>Fui excluído? Talvez por ser velho, por ser feio, não sei. Mas não guardo mágoas. Consigo apresentar sozinho e tirar nota máxima, como já fiz. Mas a sensação de exclusão dói, machuca. Porém grupo de duas pessoas, com trajetórias, raça, credo, posições políticas diferentes, talvez seja o grupo mais heterogêneo que existe. E novamente tenho um time dos excluídos que será campeão!</p>
+        
+        <p>Carol não precisou de um acórdão do STF. Ela usou o que há de mais nobre: a memória seletiva do coração. Esqueceu o que deveria ser esquecido – a minha imperfeição – e lembrou o que importa: que somos dois estudantes, diferentes em tudo, mas unidos pelo Direito e pela vontade de aprender juntos.</p>
+        
+        <p class="highlight" style="font-size: 1.2rem;">“Obrigado, Carol. Você me ensinou que o verdadeiro direito ao esquecimento é aquele que a gente concede ao outro para que a caminhada continue. E, de quebra, me mostrou que dois excluídos podem formar o grupo mais heterogêneo – e vencedor – de todos.”</p>
+        
+        <p>Como na 5ª série, quando montei um time com deficientes físicos e mentais e vencemos o campeonato – agora, na faculdade, meu time sou eu e Carol. E vamos vencer de novo.</p>
+        
+        <div style="margin-top: 2rem; text-align: right; border-top: 1px solid rgba(212,175,55,0.3); padding-top: 1rem;">
+            <i class="fas fa-feather-alt"></i> Fábio Wlademir Rodrigues da Silva – em memória viva da bondade.
+        </div>
+    </div>
 
     <!-- ARTIGO PDF (DRIVE) -->
     <section id="artigo-pdf">
