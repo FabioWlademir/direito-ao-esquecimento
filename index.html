@@ -24,7 +24,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Gradiente animado de fundo */
         .bg-glow {
             position: fixed;
             top: 0;
@@ -49,14 +48,12 @@
             100% { opacity: 1; transform: scale(1.2);}
         }
 
-        /* layout */
         .container {
             max-width: 1300px;
             margin: 0 auto;
             padding: 0 2rem;
         }
 
-        /* header fixo */
         header {
             position: sticky;
             top: 0;
@@ -82,7 +79,6 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            letter-spacing: -0.3px;
         }
 
         .nav-links {
@@ -105,7 +101,6 @@
             border-bottom-color: #F5D742;
         }
 
-        /* hero */
         .hero {
             min-height: 85vh;
             display: flex;
@@ -146,7 +141,6 @@
             backdrop-filter: blur(4px);
         }
 
-        /* Cards e seções */
         section {
             margin: 5rem 0;
         }
@@ -193,7 +187,6 @@
             margin-bottom: 0.75rem;
         }
 
-        /* Estilo para os cards da equipe com foto */
         .team-card {
             text-align: center;
         }
@@ -229,7 +222,6 @@
             font-weight: 600;
         }
 
-        /* tabela votos */
         .table-wrapper {
             overflow-x: auto;
             background: #0F0F1C;
@@ -253,7 +245,6 @@
             font-weight: 600;
         }
 
-        /* blocos teóricos */
         .theory-flex {
             display: flex;
             flex-wrap: wrap;
@@ -269,7 +260,6 @@
             border-top: 4px solid #D4AF37;
         }
 
-        /* citações */
         .quote {
             font-style: italic;
             border-left: 3px solid #D4AF37;
@@ -278,7 +268,6 @@
             color: #CBCFE0;
         }
 
-        /* iframe responsivo */
         .iframe-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -366,6 +355,23 @@
         .team-links a:hover {
             background: rgba(212,175,55,0.3);
         }
+        .ref-link {
+            font-size: 0.75rem;
+            margin-top: 0.5rem;
+            display: inline-block;
+            background: rgba(212,175,55,0.1);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            transition: 0.2s;
+            margin-right: 0.5rem;
+        }
+        .ref-link i {
+            font-size: 0.7rem;
+            margin-right: 4px;
+        }
+        .ref-link:hover {
+            background: rgba(212,175,55,0.3);
+        }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
             .section-title { font-size: 1.8rem; }
@@ -416,7 +422,6 @@
     <section id="equipe">
         <div class="section-title">👥 Nossa Equipe · Pesquisadores independentes</div>
         <div class="card-grid">
-            <!-- Carolina Card -->
             <div class="card team-card">
                 <img src="carol.jpeg" alt="Carolina Thais Willmann" class="team-photo" onerror="this.onerror=null; this.src='https://placehold.co/140x140/2A2A3A/D4AF37?text=Carol';">
                 <h3>Carolina Thais Willmann</h3>
@@ -425,13 +430,12 @@
                 <p class="team-contact"><i class="fas fa-envelope"></i> <a href="mailto:carolinawillmann242@gmail.com">carolinawillmann242@gmail.com</a></p>
                 <p class="team-contact"><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/willmanncarolina/" target="_blank">@willmanncarolina</a></p>
             </div>
-            <!-- Fábio Card -->
             <div class="card team-card">
                 <img src="fabio.jpg" alt="Fábio Wlademir Rodrigues da Silva" class="team-photo" onerror="this.onerror=null; this.src='https://placehold.co/140x140/2A2A3A/D4AF37?text=Fabio';">
                 <h3>Fábio Wlademir Rodrigues da Silva</h3>
                 <div class="team-role">Graduando em Direito · UNISINOS</div>
                 <p class="team-contact"><i class="fas fa-laptop-code"></i> Analista de Suporte em TI (NOC/SOC)</p>
-                                <p class="team-contact"><i class="fab fa-uiclap"></i> LIVROS:  <a href=https://uiclap.bio/wlademir target="_blank">https://uiclap.bio/wlademir</a></p>
+                <p class="team-contact"><i class="fab fa-uiclap"></i> LIVROS:  <a href="https://uiclap.bio/wlademir" target="_blank">https://uiclap.bio/wlademir</a></p>
                 <p class="team-contact"><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/fabiowlademirrs/" target="_blank">@fabiowlademirrs</a></p>
             </div>
         </div>
@@ -458,6 +462,8 @@
                 <i class="fas fa-gavel"></i>
                 <h3>A decisão do STF</h3>
                 <p>Em fevereiro de 2021, por 6 votos a 3, o STF negou o direito ao esquecimento como direito autônomo, fixando tese: <span class="highlight">“É incompatível com a Constituição a ideia de um direito ao esquecimento”</span> (Tema 786).</p>
+                <a href="https://www.stf.jus.br/arquivo/cms/audienciasPublicas/anexo/AUDINCIAPBLICASOBREODIREITOAOESQUECIMENTO_Transcries.pdf" target="_blank" class="ref-link"><i class="fas fa-file-pdf"></i> Transcrição Audiência Pública STF</a>
+                <a href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaPastaFachin/anexo/RE1010606.pdf" target="_blank" class="ref-link"><i class="fas fa-gavel"></i> Acórdão RE 1.010.606 (PDF oficial)</a>
             </div>
         </div>
         <div class="quote">
@@ -493,39 +499,55 @@
         </div>
     </section>
 
-    <!-- OUTROS CASOS ILUSTRATIVOS - com Barbosa e Maracanazo -->
+    <!-- OUTROS CASOS ILUSTRATIVOS - com fontes validadas e reflexão sobre OAB/Suzane -->
     <section id="outros-casos">
         <div class="section-title">📌 Outros casos que desafiam o esquecimento</div>
         <div class="card-grid">
+            <!-- Barbosa -->
             <div class="card">
                 <i class="fas fa-futbol"></i>
                 <h3>Moacir Barbosa · O Maracanazo (1950)</h3>
                 <p>O goleiro da Seleção Brasileira foi injustamente condenado pela derrota para o Uruguai na final da Copa de 1950. Barbosa carregou o estigma por 50 anos: “A pena máxima no Brasil é 30 anos, mas eu já pago há mais de 40.” Sofreu racismo, humilhação pública e morreu em 2000 ainda sob o peso do Maracanazo. Nunca houve ação judicial, mas sua história é o maior símbolo da ausência do direito ao esquecimento no país — uma condenação social perpétua.</p>
+                <a href="https://super.abril.com.br/saude/barbosa-nunca-mais-jogou-pela-selecao-depois-do-maracanaco/" target="_blank" class="ref-link"><i class="fas fa-newspaper"></i> Super · A tragédia de Barbosa</a>
+                <a href="https://brasil.elpais.com/brasil/2014/06/11/deportes/1402498066_930352.html" target="_blank" class="ref-link"><i class="fas fa-newspaper"></i> El País · O fantasma do Maracanazo</a>
             </div>
+            <!-- Xuxa com nome do filme -->
             <div class="card">
                 <i class="fas fa-star-of-life"></i>
                 <h3>Xuxa · adultização na mídia</h3>
-                <p>No início da carreira, Xuxa Meneghel participou de um filme erótico. Anos depois, como ícone infantil, tentou impedir a reexibição das imagens. O caso expõe a tensão entre passado artístico, dignidade e direito à própria biografia.</p>
+                <p>No início da carreira, Xuxa Meneghel participou do filme erótico <strong>"Amor Estranho Amor" (1982)</strong>. Anos depois, como ícone infantil, tentou impedir a reexibição das imagens. O caso expõe a tensão entre passado artístico, dignidade e direito à própria biografia.</p>
+                <a href="https://oglobo.globo.com/cultura/stf-mantem-decisao-que-permite-ao-google-exibir-cenas-de-nudez-de-xuxa-17499668" target="_blank" class="ref-link"><i class="fas fa-link"></i> O Globo · STF e cenas de nudez de Xuxa</a>
+                <a href="https://internetlab.org.br/pt/noticias/4especial-os-tribunais-brasileiros-e-o-esquecimento/" target="_blank" class="ref-link"><i class="fas fa-balance-scale"></i> InternetLab · Tribunais e esquecimento</a>
             </div>
+            <!-- Aranha -->
             <div class="card">
                 <i class="fas fa-user-shield"></i>
                 <h3>Goleiro Aranha & racismo</h3>
                 <p>Em 2014, a torcedora do Grêmio que chamou o goleiro Aranha (Santos) de “macaco” foi amplamente exposta. Anos depois, tentou o direito ao esquecimento das imagens. O STJ debateu se a memória do racismo estrutural deve prevalecer sobre a identidade do agressor.</p>
+                <a href="https://www.migalhas.com.br/depeso/340982/direito-ao-esquecimento-e-a-decisao-do-stf-no-re-1-010-606-rj" target="_blank" class="ref-link"><i class="fas fa-gavel"></i> Migalhas · Direito ao esquecimento e STF</a>
+                <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2014-09/stjd-exclui-gremio-da-copa-do-brasil-por-racismo" target="_blank" class="ref-link"><i class="fas fa-newspaper"></i> Agência Brasil · STJD e racismo</a>
             </div>
+            <!-- Suzane von Richthofen - com análise crítica e dados sobre a OAB -->
             <div class="card">
                 <i class="fas fa-user-secret"></i>
                 <h3>Suzane von Richthofen</h3>
-                <p>Condenada pelo assassinato dos pais, Suzane buscou impedir reexibição do caso para viabilizar ressocialização. STF reconheceu sigilo de antecedentes criminais, mas a tese do RE 1.010.606 dificulta o esquecimento penal.</p>
+                <p>Condenada pelo assassinato dos pais, Suzane buscou impedir reexibição do caso para viabilizar ressocialização. STF reconheceu sigilo de antecedentes criminais, mas a tese do RE 1.010.606 dificulta o esquecimento penal.<br>
+                <strong>Trajetória acadêmica:</strong> Iniciou Direito na PUC-SP em 2002, interrompido pela prisão. Desde 2024, cursa Direito na Universidade São Francisco (USF), em Bragança Paulista. <br>
+                <span class="highlight">⚖️ Direito ao esquecimento é para todos?</span> O Estatuto da Advocacia (Lei 8.906/94), art. 8º, VI, exige "idoneidade moral" para inscrição na OAB. A pergunta que fica: uma condenação por homicídio duplamente qualificado impediria Suzane de exercer a advocacia? O princípio da ressocialização colide com a exigência de reputação ilibada. Para o STF, o direito ao esquecimento não existe como direito autônomo, mas a reabilitação social ainda é um valor constitucional. O caso expõe a dura realidade: o passado criminal pode significar, na prática, uma pena perpétua profissional.</p>
+                <a href="https://revistaft.com.br/suzane-von-richtoffen-tem-direito-ao-esquecimento-ou-merece-ser-condenada-para-sempre-uma-abordagem-juridica-sobre-a-atuacao-da-midia-sobre-crimes-de-grande-repercussao-e-o-direito-ao-esqu/" target="_blank" class="ref-link"><i class="fas fa-book"></i> Revista FT · Direito ao esquecimento de Suzane</a>
+                <a href="https://noticias.stf.jus.br/postsnoticias/fux-extingue-processo-em-que-suzane-richthofen-buscava-suspender-publicacao-de-biografia/" target="_blank" class="ref-link"><i class="fas fa-gavel"></i> STF · Extinção do processo de Suzane</a>
             </div>
+            <!-- Carolina Dieckmann -->
             <div class="card">
                 <i class="fas fa-laptop-code"></i>
                 <h3>Carolina Dieckmann · vazamento íntimo</h3>
                 <p>Fotos da atriz foram roubadas e espalhadas na internet. Caso impulsionou a Lei Carolina Dieckmann (12.737/2012) e o debate sobre desindexação em mecanismos de busca — dimensão digital do esquecimento.</p>
+                <a href="https://oglobo.globo.com/cultura/noticia/2025/04/22/carolina-dieckmann-fala-da-lei-que-leva-seu-nome-da-fama-de-antipatica-e-do-vazamento-de-fotos-intimas-me-botaram-num-jatinho-e-jogaram-meio-frontal-na-minha-boca.ghtml" target="_blank" class="ref-link"><i class="fas fa-newspaper"></i> O Globo · Depoimento de Carolina Dieckmann</a>
             </div>
         </div>
     </section>
 
-    <!-- ANÁLISE TEÓRICA: KELSEN, DWORKIN, BOBBIO -->
+    <!-- ANÁLISE TEÓRICA -->
     <section id="teorias">
         <div class="section-title">🎓 Análise teórica · três gigantes do Direito</div>
         <div class="theory-flex">
@@ -533,61 +555,56 @@
                 <i class="fas fa-chalkboard-user" style="font-size: 2rem;"></i>
                 <h3>Hans Kelsen · Positivismo</h3>
                 <p>Para Kelsen, o STF agiu como <span class="highlight">“legislador negativo”</span>: ausência de norma expressa que ampare o direito ao esquecimento. A decisão é formalmente válida dentro da moldura constitucional, mas a teoria pura não consegue lidar com princípios abertos como dignidade humana.</p>
-                <p><strong>Crítica:</strong> insuficiência para incorporar valores substantivos da Constituição.</p>
             </div>
             <div class="theory-item">
                 <i class="fas fa-book-open"></i>
                 <h3>Ronald Dworkin · Pós-positivismo</h3>
-                <p>Dworkin enxergaria o caso como <em>hard case</em>. O direito ao esquecimento existe como princípio implícito derivado da dignidade humana e da autodeterminação informativa. A tese seca do STF viola a integridade do direito. O <strong>“juiz Hércules”</strong> ponderaria caso a caso, jamais negando o direito em abstrato.</p>
+                <p>Dworkin enxergaria o caso como <em>hard case</em>. O direito ao esquecimento existe como princípio implícito derivado da dignidade humana e da autodeterminação informativa. O “juiz Hércules” ponderaria caso a caso.</p>
             </div>
             <div class="theory-item">
                 <i class="fas fa-chart-line"></i>
                 <h3>Norberto Bobbio · Evolução dos direitos</h3>
-                <p>Bobbio mostra que os direitos surgem historicamente. A era digital exige direitos de quarta geração — proteção de dados, autodeterminação informativa. O STF, ao negar o direito ao esquecimento, ignora a <span class="highlight">luta pela eficácia</span> dos novos direitos na sociedade hiperconectada.</p>
+                <p>Bobbio mostra que os direitos surgem historicamente. A era digital exige direitos de quarta geração — proteção de dados, autodeterminação informativa.</p>
             </div>
         </div>
     </section>
 
-    <!-- TESE ALTERNATIVA DO GRUPO + TABELA DE PONDERAÇÃO -->
+    <!-- TESE ALTERNATIVA + PONDERAÇÃO -->
     <section id="tese-grupo">
         <div class="section-title">⚡ Nossa posição crítica: tese alternativa</div>
         <div class="card" style="background: rgba(0,0,0,0.5); margin-bottom: 2rem;">
             <h3><i class="fas fa-balance-scale"></i> Concordamos com o resultado do caso concreto, mas discordamos da tese fixada</h3>
-            <p>No caso Aída Curi, o interesse público e histórico do feminicídio justifica a reexibição. Contudo, a tese abstrata que <strong>nega o direito ao esquecimento integralmente</strong> é excessiva. Com base em Dworkin e Bobbio, defendemos que o direito ao esquecimento existe como <span class="highlight">princípio implícito</span> decorrente da dignidade da pessoa humana (art. 1º, III, CF) e da autodeterminação informativa, devendo ser ponderado casuisticamente.</p>
+            <p>No caso Aída Curi, o interesse público e histórico do feminicídio justifica a reexibição. Contudo, a tese abstrata que <strong>nega o direito ao esquecimento integralmente</strong> é excessiva. Defendemos que o direito ao esquecimento existe como <span class="highlight">princípio implícito</span> decorrente da dignidade humana, devendo ser ponderado casuisticamente.</p>
         </div>
         <div class="table-wrapper">
             <h3>📌 Proposta de ponderação (nossa tese)</h3>
-            <table>
-                <thead>
-                    <th>Situação concreta</th>
-                    <th>Ponderação</th>
-                    <th>Resultado</th>
-                </thead>
+            <tr>
+                <thead><th>Situação concreta</th><th>Ponderação</th><th>Resultado</th></thead>
                 <tbody>
                     <tr><td>Caso Aída Curi (fato histórico, feminicídio emblemático)</td><td>Interesse público prevalece</td><td>Direito ao esquecimento NEGADO</td>
                     </tr>
-                    <tr><td>Cidadão absolvido de crime menor, sem repercussão atual</td><td>Direito ao esquecimento prevalece sobre curiosidade midiática</td><td>Direito ao esquecimento RECONHECIDO</td>
+                    <tr><td>Cidadão absolvido de crime menor, sem repercussão atual</td><td>Direito ao esquecimento prevalece</td><td>RECONHECIDO</td>
                     </tr>
-                    <tr><td>Vazamento de imagens íntimas (Carolina Dieckmann)</td><td>Ausência de interesse público; grave violação da intimidade</td><td>Desindexação garantida e direito ao esquecimento APLICADO</td>
+                    <tr><td>Vazamento de imagens íntimas (Carolina Dieckmann)</td><td>Ausência de interesse público; grave violação da intimidade</td><td>Desindexação garantida e direito APLICADO</td>
                     </tr>
-                    <tr><td>Crime hediondo de conhecimento público (Suzane v. Richthofen)</td><td>Memória coletiva relevante, mas proteção contra exposição vexatória</td><td>Direito ao esquecimento NEGADO com ressalvas</td>
+                    <tr><td>Crime hediondo de conhecimento público (Suzane v. Richthofen)</td><td>Memória coletiva relevante, mas proteção contra exposição vexatória</td><td>NEGADO com ressalvas</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="quote">
-            “O STF criou um precedente engessado. Em vez de negar o direito em bloco, deveria tê-lo reconhecido como princípio, nos moldes do voto do Ministro Edson Fachin. O direito ao esquecimento não é censura, é proteção contra a perpetuação injusta de máculas.”
+            “O STF criou um precedente engessado. Em vez de negar o direito em bloco, deveria tê-lo reconhecido como princípio, nos moldes do voto do Ministro Edson Fachin.”
         </div>
     </section>
 
-    <!-- MÍDIA: VÍDEO YOUTUBE + PREZI + QR CODE -->
+    <!-- MÍDIA: YOUTUBE + PREZI + QR CODE -->
     <section id="midia">
         <div class="section-title">🎙️ Recursos interativos · Podcast em vídeo & apresentação</div>
         <div class="card-grid" style="margin-bottom: 2rem;">
             <div class="card">
                 <i class="fab fa-youtube"></i>
                 <h3>🎬 Podcast Acadêmico (YouTube)</h3>
-                <p>Episódio produzido com Notebook LM e publicado no YouTube: análise do RE 1.010.606, teorias de Kelsen, Dworkin e Bobbio, e o impacto do direito ao esquecimento.</p>
+                <p>Episódio produzido com Notebook LM: análise do RE 1.010.606, teorias de Kelsen, Dworkin e Bobbio, e o impacto do direito ao esquecimento.</p>
                 <div class="iframe-container" style="margin-top: 0.5rem;">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/W2bQ3W59EKo?si=0S92Ya7acFbWGvyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
@@ -596,21 +613,29 @@
                 <i class="fas fa-chalkboard"></i>
                 <h3>📊 Apresentação Alternativa</h3>
                 <p>Slides dinâmicos com a linha argumentativa completa: caso Aída Curi, teorias da decisão e proposta do grupo.</p>
-                <a href="#" id="preziLink" class="btn-outline" style="margin-top: 0.5rem;" onclick="document.getElementById('preziFrame').scrollIntoView({behavior:'smooth'}); return false;"><i class="fas fa-play-circle"></i> Visualizar Prezi</a>
+                <a href="#" id="preziLink" class="btn-outline" onclick="document.getElementById('preziFrame').scrollIntoView({behavior:'smooth'}); return false;"><i class="fas fa-play-circle"></i> Visualizar Prezi</a>
             </div>
         </div>
-        <!-- iframe Prezi (abaixo dos cards) -->
         <div id="preziFrame" class="iframe-container">
-            <iframe src="https://prezi.com/p/embed/aktAXmFma8FcKLhqOR9e/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen"></iframe>
+            <iframe src="https://prezi.com/p/embed/aktAXmFma8FcKLhqOR9e/" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
         </div>
-
-        <!-- QR Code + Compartilhamento -->
         <div class="qr-area">
             <h3><i class="fas fa-qrcode"></i> QR CODE</h3>
             <p>Escaneie o QR Code e acesse o conteúdo direto no seu celular</p>
             <div id="qrcode" style="display: flex; justify-content: center; margin: 1.5rem 0;"></div>
-            <p style="font-size: 0.8rem;">Link dinâmico gerado automaticamente (URL da página) by Fábio Wlademir.</p>
+            <p style="font-size: 0.8rem;">Link dinâmico gerado automaticamente by Fábio Wlademir.</p>
             <button id="copyUrlBtn" class="btn-outline" style="background:#D4AF37; color:#05050A; border: none;"><i class="fas fa-copy"></i> Copiar link da apresentação</button>
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO: Guia de Apresentações Notáveis (CAED UNISINOS) -->
+    <section id="guia-apresentacoes">
+        <div class="section-title">📘 Material de apoio · Apresentações Notáveis</div>
+        <div class="card" style="background: rgba(15, 18, 30, 0.8);">
+            <i class="fas fa-lightbulb" style="font-size: 2rem;"></i>
+            <h3>Guia Completo: Como Criar Apresentações de Slides Notáveis</h3>
+            <p>Do planejamento à execução: ferramentas, design, uso de IA e cuidados com o ambiente de exibição. Um recurso indispensável para quem deseja elevar o nível de suas apresentações acadêmicas e profissionais.</p>
+            <a href="https://caedunisinos.com.br/noticias/noticia-guia-apresentacoes.html" target="_blank" class="btn-outline" style="margin-top: 0.5rem;"><i class="fas fa-external-link-alt"></i> Acessar o Guia CAED/UNISINOS</a>
         </div>
     </section>
 
@@ -637,12 +662,12 @@
         </div>
         <div style="margin-top: 2rem; background: #0C0C18; border-radius: 28px; padding: 1.5rem;">
             <h3>📚 Referências essenciais</h3>
-            <ul style="list-style: none; margin-top: 1rem;">
+            <ul style="list-style: none;">
                 <li><i class="fas fa-book"></i> BOBBIO, Norberto. <em>A Era dos Direitos</em>. Elsevier, 2004.</li>
                 <li><i class="fas fa-book"></i> DWORKIN, Ronald. <em>Levando os Direitos a Sério</em>. Martins Fontes, 2002.</li>
                 <li><i class="fas fa-book"></i> KELSEN, Hans. <em>Teoria Pura do Direito</em>. Martins Fontes, 2006.</li>
-                <li><i class="fas fa-gavel"></i> STF. RE 1.010.606/RJ (Tema 786). Rel. Min. Dias Toffoli, j. 11/02/2021.</li>
-                <li><i class="fas fa-gavel"></i> STJ. REsp 1.335.153/RJ (Caso Aída Curi). Rel. Min. Luís Felipe Salomão, 2013.</li>
+                <li><i class="fas fa-gavel"></i> STF. RE 1.010.606/RJ (Tema 786). <a href="https://www.stf.jus.br/arquivo/cms/bibliotecaConsultaProdutoBibliotecaPastaFachin/anexo/RE1010606.pdf" target="_blank">PDF oficial</a></li>
+                <li><i class="fas fa-gavel"></i> STJ. REsp 1.335.153/RJ (Caso Aída Curi).</li>
                 <li><i class="fas fa-database"></i> Lei Geral de Proteção de Dados (LGPD) – Lei 13.709/2018.</li>
             </ul>
             <p class="quote" style="margin-top: 1rem;">Declaração de uso de IA: Ferramentas generativas (Claude, Anthropic) auxiliaram na correção gramatical, padronização ABNT e formatação. O conteúdo intelectual é de exclusiva autoria dos pesquisadores.</p>
@@ -661,7 +686,6 @@
 </footer>
 
 <script>
-    // QR Code com URL atual
     function generateQR() {
         let currentUrl = window.location.href;
         let qrcodeContainer = document.getElementById("qrcode");
@@ -677,7 +701,6 @@
             });
         }
     }
-
     window.addEventListener("load", () => {
         generateQR();
         const copyBtn = document.getElementById("copyUrlBtn");
@@ -689,7 +712,6 @@
             });
         }
     });
-
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
