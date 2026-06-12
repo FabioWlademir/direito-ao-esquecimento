@@ -193,6 +193,37 @@
             margin-bottom: 0.75rem;
         }
 
+        /* Estilo para os cards da equipe com foto */
+        .team-card {
+            text-align: center;
+        }
+        .team-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #D4AF37;
+            margin-bottom: 1rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+        .team-role {
+            font-size: 0.9rem;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+        }
+        .team-contact {
+            font-size: 0.8rem;
+            margin: 0.3rem 0;
+            word-break: break-word;
+        }
+        .team-contact a {
+            color: #B9C3DD;
+            text-decoration: none;
+        }
+        .team-contact a:hover {
+            color: #F5D742;
+        }
+
         .highlight {
             color: #F2C94C;
             font-weight: 600;
@@ -339,6 +370,7 @@
             .hero h1 { font-size: 2.2rem; }
             .section-title { font-size: 1.8rem; }
             .container { padding: 0 1.2rem; }
+            .team-photo { width: 110px; height: 110px; }
         }
     </style>
 </head>
@@ -349,6 +381,7 @@
     <div class="container nav-bar">
         <div class="logo">⚖️ DIREITO AO ESQUECIMENTO</div>
         <div class="nav-links">
+            <a href="#equipe">Equipe</a>
             <a href="#caso-aida">Caso Aída</a>
             <a href="#outros-casos">Outros casos</a>
             <a href="#teorias">Teorias</a>
@@ -375,9 +408,37 @@
             <span>| <a href="https://www.instagram.com/theoriadodireito/" target="_blank"><i class="fab fa-instagram"></i> @theoriadodireito</a></span>
         </div>
         <div style="margin-top: 2rem;">
-            <a href="#caso-aida" class="btn-outline">Explorar julgamento <i class="fas fa-arrow-down"></i></a>
+            <a href="#equipe" class="btn-outline">Conheça os autores <i class="fas fa-arrow-down"></i></a>
         </div>
     </div>
+
+    <!-- SEÇÃO: NOSSA EQUIPE -->
+    <section id="equipe">
+        <div class="section-title">👥 Nossa Equipe · Pesquisadores independentes</div>
+        <div class="card-grid">
+            <!-- Carolina Card -->
+            <div class="card team-card">
+                <img src="carol.jpeg" alt="Carolina Thais Willmann" class="team-photo" onerror="this.onerror=null; this.src='https://placehold.co/140x140/2A2A3A/D4AF37?text=Carol';">
+                <h3>Carolina Thais Willmann</h3>
+                <div class="team-role">Graduanda em Direito · UNISINOS</div>
+                <p class="team-contact">⚖️ 2º semestre · Auxiliar Administrativa</p>
+                <p class="team-contact"><i class="fas fa-envelope"></i> <a href="mailto:carolinawillmann242@gmail.com">carolinawillmann242@gmail.com</a></p>
+                <p class="team-contact"><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/willmanncarolina/" target="_blank">@willmanncarolina</a></p>
+            </div>
+            <!-- Fábio Card -->
+            <div class="card team-card">
+                <img src="fabio.jpg" alt="Fábio Wlademir Rodrigues da Silva" class="team-photo" onerror="this.onerror=null; this.src='https://placehold.co/140x140/2A2A3A/D4AF37?text=Fabio';">
+                <h3>Fábio Wlademir Rodrigues da Silva</h3>
+                <div class="team-role">Graduando em Direito · UNISINOS</div>
+                <p class="team-contact"><i class="fas fa-laptop-code"></i> Analista de Suporte em TI (NOC/SOC)</p>
+                                <p class="team-contact"><i class="fab fa-uiclap"></i> LIVROS:  <a href=https://uiclap.bio/wlademir target="_blank">https://uiclap.bio/wlademir</a></p>
+                <p class="team-contact"><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/fabiowlademirrs/" target="_blank">@fabiowlademirrs</a></p>
+            </div>
+        </div>
+        <div class="quote">
+            Trabalho acadêmico desenvolvido com dedicação à Teoria do Direito, unindo rigor jurídico e sensibilidade social. Declaração de uso de IA conforme portaria CNPq.
+        </div>
+    </section>
 
     <!-- CASO AÍDA CURI -->
     <section id="caso-aida">
@@ -412,14 +473,21 @@
                 </thead>
                 <tbody>
                     <tr><td>Dias Toffoli (Relator)</td><td>Negou provimento</td><td>Inexistente</td>
-                    <tr>
-                    <tr><td>Alexandre de Moraes</td><td>Negou provimento</td><td>Inexistente (censura prévia)</td></tr>
-                    <tr><td>Rosa Weber</td><td>Negou provimento</td><td>Inexistente — memória coletiva</td></tr>
-                    <tr><td>Cármen Lúcia</td><td>Negou provimento</td><td>Inexistente — direito de lembrar</td></tr>
-                    <tr><td>Luiz Fux</td><td>Negou (com ressalva)</td><td>Existente em tese, mas no caso interesse público prevaleceu</td></tr>
-                    <tr><td>Gilmar Mendes</td><td>Provimento parcial</td><td>Existente (âmbito penal/ressocialização)</td></tr>
-                    <tr><td>Nunes Marques</td><td>Provimento parcial</td><td>Existente (direitos da personalidade)</td></tr>
-                    <tr><td>Edson Fachin</td><td>Provimento parcial</td><td>Existente como princípio, ponderado com liberdade de expressão</td></tr>
+                    </tr>
+                    <tr><td>Alexandre de Moraes</td><td>Negou provimento</td><td>Inexistente (censura prévia)</td>
+                    </tr>
+                    <tr><td>Rosa Weber</td><td>Negou provimento</td><td>Inexistente — memória coletiva</td>
+                    </tr>
+                    <tr><td>Cármen Lúcia</td><td>Negou provimento</td><td>Inexistente — direito de lembrar</td>
+                    </tr>
+                    <tr><td>Luiz Fux</td><td>Negou (com ressalva)</td><td>Existente em tese, mas no caso interesse público prevaleceu</td>
+                    </tr>
+                    <tr><td>Gilmar Mendes</td><td>Provimento parcial</td><td>Existente (âmbito penal/ressocialização)</td>
+                    </tr>
+                    <tr><td>Nunes Marques</td><td>Provimento parcial</td><td>Existente (direitos da personalidade)</td>
+                    </tr>
+                    <tr><td>Edson Fachin</td><td>Provimento parcial</td><td>Existente como princípio, ponderado com liberdade de expressão</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -496,10 +564,14 @@
                     <th>Resultado</th>
                 </thead>
                 <tbody>
-                    <tr><td>Caso Aída Curi (fato histórico, feminicídio emblemático)</td><td>Interesse público prevalece</td><td>Direito ao esquecimento NEGADO</td></tr>
-                    <tr><td>Cidadão absolvido de crime menor, sem repercussão atual</td><td>Direito ao esquecimento prevalece sobre curiosidade midiática</td><td>Direito ao esquecimento RECONHECIDO</td></tr>
-                    <tr><td>Vazamento de imagens íntimas (Carolina Dieckmann)</td><td>Ausência de interesse público; grave violação da intimidade</td><td>Desindexação garantida e direito ao esquecimento APLICADO</td></tr>
-                    <tr><td>Crime hediondo de conhecimento público (Suzane v. Richthofen)</td><td>Memória coletiva relevante, mas proteção contra exposição vexatória</td><td>Direito ao esquecimento NEGADO com ressalvas</td></tr>
+                    <tr><td>Caso Aída Curi (fato histórico, feminicídio emblemático)</td><td>Interesse público prevalece</td><td>Direito ao esquecimento NEGADO</td>
+                    </tr>
+                    <tr><td>Cidadão absolvido de crime menor, sem repercussão atual</td><td>Direito ao esquecimento prevalece sobre curiosidade midiática</td><td>Direito ao esquecimento RECONHECIDO</td>
+                    </tr>
+                    <tr><td>Vazamento de imagens íntimas (Carolina Dieckmann)</td><td>Ausência de interesse público; grave violação da intimidade</td><td>Desindexação garantida e direito ao esquecimento APLICADO</td>
+                    </tr>
+                    <tr><td>Crime hediondo de conhecimento público (Suzane v. Richthofen)</td><td>Memória coletiva relevante, mas proteção contra exposição vexatória</td><td>Direito ao esquecimento NEGADO com ressalvas</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -522,7 +594,7 @@
             </div>
             <div class="card">
                 <i class="fas fa-chalkboard"></i>
-                <h3>📊 Apresentação Alternativa Prezi</h3>
+                <h3>📊 Apresentação Alternativa</h3>
                 <p>Slides dinâmicos com a linha argumentativa completa: caso Aída Curi, teorias da decisão e proposta do grupo.</p>
                 <a href="#" id="preziLink" class="btn-outline" style="margin-top: 0.5rem;" onclick="document.getElementById('preziFrame').scrollIntoView({behavior:'smooth'}); return false;"><i class="fas fa-play-circle"></i> Visualizar Prezi</a>
             </div>
@@ -534,8 +606,8 @@
 
         <!-- QR Code + Compartilhamento -->
         <div class="qr-area">
-            <h3><i class="fas fa-qrcode"></i> QR CODE</h3>
-            <p>Escaneie o QR Code e acesse o conteúdo direto no seu celular.</p>
+            <h3><i class="fas fa-qrcode"></i> Compartilhe este site na apresentação</h3>
+            <p>Escaneie o QR Code e acesse o conteúdo direto no seu celular — impacte professores e colegas.</p>
             <div id="qrcode" style="display: flex; justify-content: center; margin: 1.5rem 0;"></div>
             <p style="font-size: 0.8rem;">Link dinâmico gerado automaticamente (URL da página).</p>
             <button id="copyUrlBtn" class="btn-outline" style="background:#D4AF37; color:#05050A; border: none;"><i class="fas fa-copy"></i> Copiar link da apresentação</button>
