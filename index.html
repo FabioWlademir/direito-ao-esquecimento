@@ -398,7 +398,8 @@
             <a href="#outros-casos">Outros casos</a>
             <a href="#teorias">Teorias</a>
             <a href="#tese-grupo">Nossa tese</a>
-            <a href="recursos_interativos.html">📁 Recursos</a>
+            <a href="#midia">Mídia</a>
+            <a href="#artigo-pdf">Artigo</a>
             <a href="homenagem.html">❤️ Homenagem</a>
             <a href="direito_ao_esquecimento_em_outros_paises.html">🌍 Mapa</a>
         </div>
@@ -451,15 +452,6 @@
         </div>
     </section>
 
-    <!-- QR CODE (movido para cá, acima do card da homenagem) -->
-    <div class="qr-area">
-        <h3><i class="fas fa-qrcode"></i> QR CODE</h3>
-        <p>Escaneie o QR Code e acesse o conteúdo direto no seu celular</p>
-        <div id="qrcode" style="display: flex; justify-content: center; margin: 1.5rem 0;"></div>
-        <p style="font-size: 0.8rem;">Link dinâmico gerado automaticamente by Fábio Wlademir.</p>
-        <button id="copyUrlBtn" class="btn-outline" style="background:#D4AF37; color:#05050A; border: none;"><i class="fas fa-copy"></i> Copiar link da apresentação</button>
-    </div>
-
     <!-- CARD DE CHAMADA PARA A HOMENAGEM (aponta para homenagem.html) -->
     <section id="homenagem-chamada">
         <div class="card call-card">
@@ -470,16 +462,6 @@
         </div>
     </section>
 
-    <!-- CARD DO MAPA MUNDIAL (logo abaixo do card da homenagem) -->
-    <section id="mapa-mundo-card">
-        <div class="card call-card">
-            <i class="fas fa-globe-americas" style="color: #E4B83E;"></i>
-            <h3>🌎 Direito ao Esquecimento pelo Mundo</h3>
-            <p>Uma viagem aprofundada pelo direito comparado: União Europeia, EUA, América Latina (Argentina, Colômbia, Chile), Ásia (Japão, Coreia, Rússia, Índia, China), Canadá, Reino Unido, Austrália e outros.</p>
-            <a href="direito_ao_esquecimento_em_outros_paises.html" class="btn-outline" style="background: #D4AF37; color:#05050A; border:none;">🗺️ Explorar mapa global</a>
-        </div>
-    </section>
-
     <!-- CASO AÍDA CURI -->
     <section id="caso-aida">
         <div class="section-title">💔 O Caso Aída Curi · 1958 – 2021</div>
@@ -487,7 +469,7 @@
             <div class="card">
                 <i class="fas fa-female"></i>
                 <h3>O crime brutal</h3>
-                <p>Em 14 de julho de 1958, Aída Curi, 18 anos, foi vítima de tentativa de estupro e assassinada ao ser lançada do Edifício Rio Nobre, em Copacabana. O homicídio foi cometido em contexto de violência de gênero – um crime que, se julgado hoje, seria enquadrado como feminicídio (Lei 13.104/2015 sancionada em 2015). A tragédia chocou o Brasil e foi relembrada em rede nacional em 2004, tornando-se símbolo da luta contra a violência contra a mulher.</p>
+                <p>Em 14 de julho de 1958, Aída Curi, 18 anos, foi vítima de tentativa de estupro e assassinada ao ser lançada do Edifício Rio Nobre, em Copacabana. O caso chocou o Brasil e se tornou símbolo de feminicídio e violência de gênero.</p>
             </div>
             <div class="card">
                 <i class="fas fa-tv"></i>
@@ -514,10 +496,14 @@
                     <th>Direito ao esquecimento?</th>
                 </thead>
                 <tbody>
-                    <tr><td style="white-space: normal;">Dias Toffoli (Relator)</td><td style="white-space: normal;">Negou provimento</td><td style="white-space: normal;">Inexistente</td></tr>
-                    <tr><td style="white-space: normal;">Alexandre de Moraes</td><td style="white-space: normal;">Negou provimento</td><td style="white-space: normal;">Inexistente (censura prévia)</td></tr>
-                    <tr><td style="white-space: normal;">Rosa Weber</td><td style="white-space: normal;">Negou provimento</td><td style="white-space: normal;">Inexistente — memória coletiva</td></tr>
-                    <tr><td style="white-space: normal;">Cármen Lúcia</td><td style="white-space: normal;">Negou provimento</td><td style="white-space: normal;">Inexistente — direito de lembrar</td></tr>
+                    <tr><td>Dias Toffoli (Relator)</td><td>Negou provimento</td><td>Inexistente</tr>
+                    <tr><td>Alexandre de Moraes</td><td>Negou provimento</td><td>Inexistente (censura prévia)</td></tr>
+                    <tr><td>Rosa Weber</td><td>Negou provimento</td><td>Inexistente — memória coletiva</td></tr>
+                    <tr><td>Cármen Lúcia</td><td>Negou provimento</td><td>Inexistente — direito de lembrar</td></tr>
+                    <tr><td>Luiz Fux</td><td>Negou (com ressalva)</td><td>Existente em tese, mas no caso interesse público prevaleceu</td></tr>
+                    <tr><td>Gilmar Mendes</td><td>Provimento parcial</td><td>Existente (âmbito penal/ressocialização)</td></tr>
+                    <tr><td>Nunes Marques</td><td>Provimento parcial</td><td>Existente (direitos da personalidade)</td></tr>
+                    <tr><td>Edson Fachin</td><td>Provimento parcial</td><td>Existente como princípio, ponderado com liberdade de expressão</td></tr>
                 </tbody>
             </table>
         </div>
@@ -555,6 +541,12 @@
                 <span class="highlight">⚖️ Direito ao esquecimento é para todos?</span> O Estatuto da Advocacia (Lei 8.906/94), art. 8º, VI, exige "idoneidade moral". A pergunta que fica: uma condenação por homicídio impediria Suzane de advogar? O caso expõe a pena perpétua profissional.</p>
                 <a href="https://revistaft.com.br/suzane-von-richtoffen-tem-direito-ao-esquecimento-ou-merece-ser-condenada-para-sempre-uma-abordagem-juridica-sobre-a-atuacao-da-midia-sobre-crimes-de-grande-repercussao-e-o-direito-ao-esqu/" target="_blank" class="ref-link"><i class="fas fa-book"></i> Revista FT · Direito ao esquecimento de Suzane</a>
                 <a href="https://noticias.stf.jus.br/postsnoticias/fux-extingue-processo-em-que-suzane-richthofen-buscava-suspender-publicacao-de-biografia/" target="_blank" class="ref-link"><i class="fas fa-gavel"></i> STF · Extinção do processo</a>
+            </div>
+			<div class="card">
+                <i class="fas fa-gavel"></i>
+                <h3>⚖️ Construção Jurisprudencial no Brasil</h3>
+                <p>Precedentes do STJ e a consolidação do tema no RE 1.010.606/STF (Caso Aída Curi). Conheça os casos que pavimentaram o caminho para a decisão da Suprema Corte: Chacina da Candelária, HC 126.315, ADI 4.815 (Biografias) e ADPF 130 (Lei de Imprensa).</p>
+                <a href="contrucao_jurisprudencial.html" target="_blank" class="ref-link"><i class="fas fa-book-open"></i> 📖 Conhecer a construção jurisprudencial</a>
             </div>
             <div class="card">
                 <i class="fas fa-laptop-code"></i>
@@ -599,10 +591,10 @@
             <table>
                 <thead><th>Situação concreta</th><th>Ponderação</th><th>Resultado</th></thead>
                 <tbody>
-                    <tr><td style="white-space: normal;">Caso Aída Curi (fato histórico, feminicídio emblemático)</td><td style="white-space: normal;">Interesse público prevalece</td><td style="white-space: normal;">Direito ao esquecimento NEGADO</td></tr>
-                    <tr><td style="white-space: normal;">Cidadão absolvido de crime menor, sem repercussão atual</td><td style="white-space: normal;">Direito ao esquecimento prevalece</td><td style="white-space: normal;">RECONHECIDO</td></tr>
-                    <tr><td style="white-space: normal;">Vazamento de imagens íntimas (Carolina Dieckmann)</td><td style="white-space: normal;">Ausência de interesse público; grave violação</td><td style="white-space: normal;">Desindexação garantida e direito APLICADO</td></tr>
-                    <tr><td style="white-space: normal;">Crime hediondo de conhecimento público (Suzane v. Richthofen)</td><td style="white-space: normal;">Memória coletiva relevante, mas proteção contra exposição vexatória</td><td style="white-space: normal;">NEGADO com ressalvas</td></tr>
+                    <tr><td>Caso Aída Curi (fato histórico, feminicídio emblemático)</td><td>Interesse público prevalece</td><td>Direito ao esquecimento NEGADO</td></tr>
+                    <tr><td>Cidadão absolvido de crime menor, sem repercussão atual</td><td>Direito ao esquecimento prevalece</td><td>RECONHECIDO</td></tr>
+                    <tr><td>Vazamento de imagens íntimas (Carolina Dieckmann)</td><td>Ausência de interesse público; grave violação</td><td>Desindexação garantida e direito APLICADO</td></tr>
+                    <tr><td>Crime hediondo de conhecimento público (Suzane v. Richthofen)</td><td>Memória coletiva relevante, mas proteção contra exposição vexatória</td><td>NEGADO com ressalvas</td></tr>
                 </tbody>
             </table>
         </div>
@@ -611,16 +603,44 @@
         </div>
     </section>
 
-    <!-- CARDS DE ACESSO AOS RECURSOS INTERATIVOS (página separada) -->
-    <section id="recursos-chamada">
-        <div class="section-title">🎬 Recursos Interativos · Podcast, Prezi, Artigos</div>
-        <div class="card-grid">
-            <div class="card call-card" style="text-align: center;">
-                <i class="fas fa-head-side-vr"></i>
-                <h3>🎧 Podcast & Apresentações</h3>
-                <p>Podcast acadêmico (YouTube), apresentação alternativa (Prezi), artigo científico e slides oficiais – tudo em um só lugar.</p>
-                <a href="recursos_interativos.html" class="btn-outline" style="background: #D4AF37; color:#05050A; border:none;">📁 Acessar todos os recursos</a>
+    <!-- MÍDIA: YOUTUBE + PREZI + QR CODE -->
+    <section id="midia">
+        <div class="section-title">🎙️ Recursos interativos · Podcast em vídeo & apresentação</div>
+        <div class="card-grid" style="margin-bottom: 2rem;">
+            <div class="card">
+                <i class="fab fa-youtube"></i>
+                <h3>🎬 Podcast Acadêmico (YouTube)</h3>
+                <p>Episódio produzido com Notebook LM: análise do RE 1.010.606, teorias de Kelsen, Dworkin e Bobbio, e o impacto do direito ao esquecimento.</p>
+                <div class="iframe-container" style="margin-top: 0.5rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W2bQ3W59EKo?si=0S92Ya7acFbWGvyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
+            <div class="card">
+                <i class="fas fa-chalkboard"></i>
+                <h3>📊 Apresentação Alternativa</h3>
+                <p>Slides dinâmicos com a linha argumentativa completa: caso Aída Curi, teorias da decisão e proposta do grupo.</p>
+                <a href="#" id="preziLink" class="btn-outline" onclick="document.getElementById('preziFrame').scrollIntoView({behavior:'smooth'}); return false;"><i class="fas fa-play-circle"></i> Visualizar Prezi</a>
+            </div>
+        </div>
+        <div id="preziFrame" class="iframe-container">
+            <iframe src="https://prezi.com/p/embed/aktAXmFma8FcKLhqOR9e/" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="qr-area">
+            <h3><i class="fas fa-qrcode"></i> QR CODE</h3>
+            <p>Escaneie o QR Code e acesse o conteúdo direto no seu celular</p>
+            <div id="qrcode" style="display: flex; justify-content: center; margin: 1.5rem 0;"></div>
+            <p style="font-size: 0.8rem;">Link dinâmico gerado automaticamente by Fábio Wlademir.</p>
+            <button id="copyUrlBtn" class="btn-outline" style="background:#D4AF37; color:#05050A; border: none;"><i class="fas fa-copy"></i> Copiar link da apresentação</button>
+        </div>
+    </section>
+
+    <!-- NOVO CARD: DIREITO AO ESQUECIMENTO PELO MUNDO -->
+    <section id="mapa-mundo-card">
+        <div class="card call-card">
+            <i class="fas fa-globe-americas" style="color: #E4B83E;"></i>
+            <h3>🌎 Direito ao Esquecimento pelo Mundo</h3>
+            <p>Uma viagem aprofundada pelo direito comparado: União Europeia, EUA, América Latina (Argentina, Colômbia, Chile), Ásia (Japão, Coreia, Rússia, Índia, China), Canadá, Reino Unido, Austrália e outros.</p>
+            <a href="direito_ao_esquecimento_em_outros_paises.html" class="btn-outline" style="background: #D4AF37; color:#05050A; border:none;">🗺️ Explorar mapa global</a>
         </div>
     </section>
 
@@ -632,6 +652,17 @@
             <h3>Guia Completo: Como Criar Apresentações de Slides Notáveis</h3>
             <p>Do planejamento à execução: ferramentas, design, uso de IA e cuidados com o ambiente de exibição. Um recurso indispensável.</p>
             <a href="https://caedunisinos.com.br/noticias/noticia-guia-apresentacoes.html" target="_blank" class="btn-outline" style="margin-top: 0.5rem;"><i class="fas fa-external-link-alt"></i> Acessar o Guia CAED/UNISINOS</a>
+        </div>
+    </section>
+
+    <!-- ARTIGO PDF (DRIVE) -->
+    <section id="artigo-pdf">
+        <div class="section-title">📄 Artigo completo · Direito ao esquecimento</div>
+        <div class="card" style="padding: 0.5rem;">
+            <div class="iframe-container" style="padding-bottom: 75%;">
+                <iframe src="https://drive.google.com/file/d/1_xIScwTPUkLKaxsMSLezRAMqbUO6PtTj/preview" allow="autoplay" allowfullscreen></iframe>
+            </div>
+            <p style="text-align: center; margin-top: 1rem;">Caso a visualização não carregue, <a href="https://drive.google.com/file/d/1_xIScwTPUkLKaxsMSLezRAMqbUO6PtTj/view?usp=sharing" target="_blank" class="highlight">clique aqui para abrir no Google Drive</a>.</p>
         </div>
     </section>
 
