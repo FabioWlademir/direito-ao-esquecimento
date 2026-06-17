@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Direito ao Esquecimento · Análise do RE 1.010.606/STF · Carolina & Fábio</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Análise aprofundada do Caso Aída Curi (RE 1.010.606/STF) sob as teorias de Kelsen, Dworkin e Bobbio. Trabalho acadêmico de Carolina Willmann e Fábio Wlademir – UNISINOS.">
+    <meta name="keywords" content="direito ao esquecimento, caso Aída Curi, RE 1.010.606, STF, Kelsen, Dworkin, Bobbio, teoria do direito, UNISINOS">
+    <meta name="author" content="Carolina Thais Willmann, Fábio Wlademir Rodrigues da Silva">
+    <meta property="og:title" content="Direito ao Esquecimento · Análise do RE 1.010.606/STF">
+    <meta property="og:description" content="Uma análise teórica e crítica do direito ao esquecimento à luz do caso Aída Curi, com ponderação de princípios.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://f2suporte.blogspot.com/2025/07/direito-ao-esquecimento-re-1010606.html">
+    <!-- Para imagem OG, você pode adicionar uma imagem de capa se desejar -->
+    <!-- <meta property="og:image" content="link-da-imagem.jpg"> -->
+    <link rel="canonical" href="https://f2suporte.blogspot.com/2025/07/direito-ao-esquecimento-re-1010606.html">
+
     <!-- Google Fonts + Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- QR Code Library -->
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
     <style>
+        /* (todo o CSS permanece igual ao original, com os ajustes de responsividade já existentes) */
         * {
             margin: 0;
             padding: 0;
@@ -313,6 +326,12 @@
             margin: 2rem 0;
         }
 
+        .call-card {
+            background: linear-gradient(135deg, rgba(212,175,55,0.15), rgba(30,20,45,0.8));
+            border-left: 4px solid #E4B83E;
+            text-align: center;
+        }
+
         footer {
             text-align: center;
             padding: 2rem 0;
@@ -364,6 +383,8 @@
             border-radius: 20px;
             transition: 0.2s;
             margin-right: 0.5rem;
+            text-decoration: none;
+            color: #E0E4F0;
         }
         .ref-link i {
             font-size: 0.7rem;
@@ -372,17 +393,20 @@
         .ref-link:hover {
             background: rgba(212,175,55,0.3);
         }
-        /* Card de chamada */
-        .call-card {
-            background: linear-gradient(135deg, rgba(212,175,55,0.15), rgba(30,20,45,0.8));
-            border-left: 4px solid #E4B83E;
-            text-align: center;
-        }
+
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
             .section-title { font-size: 1.8rem; }
             .container { padding: 0 1.2rem; }
             .team-photo { width: 110px; height: 110px; }
+            .nav-links { gap: 0.8rem; }
+            .nav-links a { font-size: 0.8rem; }
+            .badge-autores { padding: 0.5rem 1rem; font-size: 0.8rem; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .card-grid { grid-template-columns: 1fr; }
+            .theory-flex { flex-direction: column; }
         }
     </style>
 </head>
@@ -398,8 +422,10 @@
             <a href="#outros-casos">Outros casos</a>
             <a href="#teorias">Teorias</a>
             <a href="#tese-grupo">Nossa tese</a>
-            <a href="#midia">Mídia</a>
+            <a href="recursos_interativos.html">🎙️ Recursos Interativos</a>
             <a href="#artigo-pdf">Artigo</a>
+            <a href="contrucao_jurisprudencial.html">📚 Construção Jurisprudencial</a>
+            <a href="bonus.html">🧠 Bônus Luhmann &amp; Hart</a>
             <a href="homenagem.html">❤️ Homenagem</a>
             <a href="direito_ao_esquecimento_em_outros_paises.html">🌍 Mapa</a>
         </div>
@@ -452,7 +478,7 @@
         </div>
     </section>
 
-    <!-- CARD DE CHAMADA PARA A HOMENAGEM (aponta para homenagem.html) -->
+    <!-- CARD DE CHAMADA PARA A HOMENAGEM -->
     <section id="homenagem-chamada">
         <div class="card call-card">
             <i class="fas fa-heart" style="color: #E4B83E;"></i>
@@ -496,7 +522,7 @@
                     <th>Direito ao esquecimento?</th>
                 </thead>
                 <tbody>
-                    <tr><td>Dias Toffoli (Relator)</td><td>Negou provimento</td><td>Inexistente</tr>
+                    <tr><td>Dias Toffoli (Relator)</td><td>Negou provimento</td><td>Inexistente</td></tr>
                     <tr><td>Alexandre de Moraes</td><td>Negou provimento</td><td>Inexistente (censura prévia)</td></tr>
                     <tr><td>Rosa Weber</td><td>Negou provimento</td><td>Inexistente — memória coletiva</td></tr>
                     <tr><td>Cármen Lúcia</td><td>Negou provimento</td><td>Inexistente — direito de lembrar</td></tr>
@@ -537,12 +563,11 @@
             <div class="card">
                 <i class="fas fa-user-secret"></i>
                 <h3>Suzane von Richthofen</h3>
-                <p>Condenada pelo assassinato dos pais, Suzane buscou impedir reexibição do caso para viabilizar ressocialização. STF reconheceu sigilo de antecedentes criminais, mas a tese do RE 1.010.606 dificulta o esquecimento penal.<br><strong>Trajetória acadêmica:</strong> Iniciou Direito na PUC-SP em 2002, interrompido pela prisão. Desde 2024, cursa Direito na USF.<br>
-                <span class="highlight">⚖️ Direito ao esquecimento é para todos?</span> O Estatuto da Advocacia (Lei 8.906/94), art. 8º, VI, exige "idoneidade moral". A pergunta que fica: uma condenação por homicídio impediria Suzane de advogar? O caso expõe a pena perpétua profissional.</p>
+                <p>Condenada pelo assassinato dos pais, Suzane buscou impedir reexibição do caso para viabilizar ressocialização. STF reconheceu sigilo de antecedentes criminais, mas a tese do RE 1.010.606 dificulta o esquecimento penal.<br><strong>Trajetória acadêmica:</strong> Iniciou Direito na PUC-SP em 2002, interrompido pela prisão. Desde 2024, cursa Direito na USF.<br><span class="highlight">⚖️ Direito ao esquecimento é para todos?</span> O Estatuto da Advocacia (Lei 8.906/94), art. 8º, VI, exige "idoneidade moral". A pergunta que fica: uma condenação por homicídio impediria Suzane de advogar? O caso expõe a pena perpétua profissional.</p>
                 <a href="https://revistaft.com.br/suzane-von-richtoffen-tem-direito-ao-esquecimento-ou-merece-ser-condenada-para-sempre-uma-abordagem-juridica-sobre-a-atuacao-da-midia-sobre-crimes-de-grande-repercussao-e-o-direito-ao-esqu/" target="_blank" class="ref-link"><i class="fas fa-book"></i> Revista FT · Direito ao esquecimento de Suzane</a>
                 <a href="https://noticias.stf.jus.br/postsnoticias/fux-extingue-processo-em-que-suzane-richthofen-buscava-suspender-publicacao-de-biografia/" target="_blank" class="ref-link"><i class="fas fa-gavel"></i> STF · Extinção do processo</a>
             </div>
-			<div class="card">
+            <div class="card">
                 <i class="fas fa-gavel"></i>
                 <h3>⚖️ Construção Jurisprudencial no Brasil</h3>
                 <p>Precedentes do STJ e a consolidação do tema no RE 1.010.606/STF (Caso Aída Curi). Conheça os casos que pavimentaram o caminho para a decisão da Suprema Corte: Chacina da Candelária, HC 126.315, ADI 4.815 (Biografias) e ADPF 130 (Lei de Imprensa).</p>
@@ -576,6 +601,13 @@
                 <h3>Norberto Bobbio · Evolução dos direitos</h3>
                 <p>Bobbio mostra que os direitos surgem historicamente. A era digital exige direitos de quarta geração — proteção de dados, autodeterminação informativa.</p>
             </div>
+            <!-- NOVO CARD: Bônus Luhmann & Hart -->
+            <div class="theory-item" style="border-top-color: #9b59b6;">
+                <i class="fas fa-flask" style="font-size: 2rem; color: #9b59b6;"></i>
+                <h3>🧠 Bônus: Luhmann &amp; Hart</h3>
+                <p>Dois autores fundamentais que complementam a análise: <strong>Niklas Luhmann</strong> (Teoria dos Sistemas) e <strong>Herbert Hart</strong> (Positivismo Inclusivo). Como eles interpretariam o Caso Aída Curi? Um aprofundamento teórico essencial.</p>
+                <a href="bonus.html" class="btn-outline" style="margin-top: 1rem; display: inline-block; border-color: #9b59b6; color: #9b59b6;">🔍 Explorar Análise</a>
+            </div>
         </div>
     </section>
 
@@ -603,44 +635,16 @@
         </div>
     </section>
 
-    <!-- MÍDIA: YOUTUBE + PREZI + QR CODE -->
+    <!-- RECURSOS INTERATIVOS (NOVO CARD DE CHAMADA) -->
     <section id="midia">
-        <div class="section-title">🎙️ Recursos interativos · Podcast em vídeo & apresentação</div>
-        <div class="card-grid" style="margin-bottom: 2rem;">
-            <div class="card">
-                <i class="fab fa-youtube"></i>
-                <h3>🎬 Podcast Acadêmico (YouTube)</h3>
-                <p>Episódio produzido com Notebook LM: análise do RE 1.010.606, teorias de Kelsen, Dworkin e Bobbio, e o impacto do direito ao esquecimento.</p>
-                <div class="iframe-container" style="margin-top: 0.5rem;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W2bQ3W59EKo?si=0S92Ya7acFbWGvyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="card">
-                <i class="fas fa-chalkboard"></i>
-                <h3>📊 Apresentação Alternativa</h3>
-                <p>Slides dinâmicos com a linha argumentativa completa: caso Aída Curi, teorias da decisão e proposta do grupo.</p>
-                <a href="#" id="preziLink" class="btn-outline" onclick="document.getElementById('preziFrame').scrollIntoView({behavior:'smooth'}); return false;"><i class="fas fa-play-circle"></i> Visualizar Prezi</a>
-            </div>
-        </div>
-        <div id="preziFrame" class="iframe-container">
-            <iframe src="https://prezi.com/p/embed/aktAXmFma8FcKLhqOR9e/" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-        </div>
-        <div class="qr-area">
-            <h3><i class="fas fa-qrcode"></i> QR CODE</h3>
-            <p>Escaneie o QR Code e acesse o conteúdo direto no seu celular</p>
-            <div id="qrcode" style="display: flex; justify-content: center; margin: 1.5rem 0;"></div>
-            <p style="font-size: 0.8rem;">Link dinâmico gerado automaticamente by Fábio Wlademir.</p>
-            <button id="copyUrlBtn" class="btn-outline" style="background:#D4AF37; color:#05050A; border: none;"><i class="fas fa-copy"></i> Copiar link da apresentação</button>
-        </div>
-    </section>
-
-    <!-- NOVO CARD: DIREITO AO ESQUECIMENTO PELO MUNDO -->
-    <section id="mapa-mundo-card">
+        <div class="section-title">🎙️ Recursos interativos · Podcast em vídeo &amp; apresentação</div>
         <div class="card call-card">
-            <i class="fas fa-globe-americas" style="color: #E4B83E;"></i>
-            <h3>🌎 Direito ao Esquecimento pelo Mundo</h3>
-            <p>Uma viagem aprofundada pelo direito comparado: União Europeia, EUA, América Latina (Argentina, Colômbia, Chile), Ásia (Japão, Coreia, Rússia, Índia, China), Canadá, Reino Unido, Austrália e outros.</p>
-            <a href="direito_ao_esquecimento_em_outros_paises.html" class="btn-outline" style="background: #D4AF37; color:#05050A; border:none;">🗺️ Explorar mapa global</a>
+            <i class="fas fa-podcast" style="color: #E4B83E; font-size: 2.5rem;"></i>
+            <h3>🎬 Podcast Acadêmico &amp; Apresentações</h3>
+            <p>Conheça todos os materiais multimídia do trabalho: <strong>podcast em vídeo</strong> com análise do RE 1.010.606, <strong>apresentação alternativa (Prezi)</strong>, <strong>slides oficiais</strong> e o <strong>artigo científico completo</strong>. Tudo reunido em uma página exclusiva para facilitar o acesso.</p>
+            <a href="recursos_interativos.html" class="btn-outline" style="background: #D4AF37; color:#05050A; border:none; font-weight:700;">
+                <i class="fas fa-external-link-alt"></i> Acessar todos os recursos
+            </a>
         </div>
     </section>
 
@@ -702,6 +706,7 @@
 </footer>
 
 <script>
+    // Geração do QR Code
     function generateQR() {
         let currentUrl = window.location.href;
         let qrcodeContainer = document.getElementById("qrcode");
@@ -728,6 +733,7 @@
             });
         }
     });
+    // Smooth scroll para links internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
